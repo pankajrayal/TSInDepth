@@ -1,0 +1,145 @@
+﻿//{
+//  "compilerOptions": {
+//    "baseUrl": ".", // This must be specified if "paths" is.
+//    "paths": {
+//      "jquery": [ "node_modules/jquery/dist/jquery" ]
+//    }
+//  }
+//}
+
+
+//{
+//  "compilerOptions": {
+//    "baseUrl": ".",
+//    "paths": {
+//      "*": [
+//        "*",
+//        "generated/*"
+//      ]
+//    }
+//  }
+//}
+
+
+
+//{
+//  "compilerOptions": {
+//    "rootDirs": [
+//      "src/views",
+//      "generated/templates/views"
+//    ]
+//  }
+//}
+
+
+////tsconfig.json:
+//{
+//  "compilerOptions": {
+//    "target": "ES5",
+//    "experimentalDecorators": true,
+//    "emitDecoratorMetadata": true
+//  }
+//}
+//-------------------
+//Using the "files" property
+//{
+//  "compilerOptions": {
+//    "module": "commonjs",
+//    "noImplicitAny": true,
+//    "removeComments": true,
+//    "preserveConstEnums": true,
+//    "sourceMap": true
+//  },
+//  "files": [
+//    "core.ts",
+//    "sys.ts",
+//    "types.ts",
+//    "scanner.ts",
+//    "parser.ts",
+//    "utilities.ts",
+//    "binder.ts",
+//    "checker.ts",
+//    "emitter.ts",
+//    "program.ts",
+//    "commandLineParser.ts",
+//    "tsc.ts",
+//    "diagnosticInformationMap.generated.ts"
+//  ]
+//}
+//-------------------------------------------------------
+////Using the "include" and "exclude" properties
+//{
+//  "compilerOptions": {
+//    "module": "system",
+//    "noImplicitAny": true,
+//    "removeComments": true,
+//    "preserveConstEnums": true,
+//    "outFile": "../../built/local/tsc.js",
+//    "sourceMap": true
+//  },
+//  "include": [
+//    "src/**/*"
+//  ],
+//  "exclude": [
+//    "node_modules",
+//    "**/*.spec.ts"
+//  ]
+//}
+//-----------------------------------------------------
+////If typesRoots is specified, only packages under typeRoots will be included. For example:
+//{
+//  "compilerOptions": {
+//    "typeRoots": [ "./typings" ]
+//  }
+//}
+////------------------------
+////This config file will include all packages under ./typings, and no packages from ./node_modules/@types.
+////If types is specified, only packages listed will be included. For instance:
+//{
+//   "compilerOptions": {
+//       "types" : ["node", "lodash", "express"]
+//   }
+//}
+//-----------------------------------------------
+//configs/base.json:
+//{
+//  "compilerOptions": {
+//    "noImplicitAny": true,
+//    "strictNullChecks": true
+//  }
+//}
+//tsconfig.json:
+
+//{
+//  "extends": "./configs/base",
+//  "files": [
+//    "main.ts",
+//    "supplemental.ts"
+//  ]
+//}
+
+//tsconfig.nostrictnull.json:
+//{
+//  "extends": "./tsconfig",
+//  "compilerOptions": {
+//    "strictNullChecks": false
+//  }
+//}
+
+//-------------------------------
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": true
+  }
+}
+
+
+
+
+
+
+
+
+
+

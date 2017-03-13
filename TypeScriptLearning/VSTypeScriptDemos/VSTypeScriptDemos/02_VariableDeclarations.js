@@ -112,7 +112,7 @@ for (var i_3 = 0; i_3 < 10; i_3++) {
 var numLivesForCat = 9;
 var kitty = {
     name: "Aurora",
-    numLives: numLivesForCat,
+    numLives: numLivesForCat
 };
 //// Error
 //kitty = {

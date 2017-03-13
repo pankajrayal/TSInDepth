@@ -49,8 +49,8 @@ notSure.ifItExists(); // okay, ifItExists might exist at runtime
 notSure.toFixed(); // okay, toFixed exists (but the compiler doesn't check)
 var prettySure = 4;
 //prettySure.toFixed(); // Error: Property 'toFixed' doesn't exist on type 'Object'.
-var list = [1, true, "free"];
-list[1] = 100;
+//let list: any[] = [1, true, "free"];
+//list[1] = 100;
 function warnUser() {
     alert("This is my warning message");
 }

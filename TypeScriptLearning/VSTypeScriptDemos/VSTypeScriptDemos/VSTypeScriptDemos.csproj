@@ -100,6 +100,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -108,7 +109,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MyTestPage.html" />
     <Content Include="Web.config" />
+    <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +123,41 @@
     <TypeScriptCompile Include="04_Classes.ts" />
     <TypeScriptCompile Include="05_Functions.ts" />
     <TypeScriptCompile Include="06_Generics.ts" />
+    <TypeScriptCompile Include="10_NamespacesAndModules.ts" />
+    <TypeScriptCompile Include="11_Generics.ts" />
+    <TypeScriptCompile Include="12_Enums.ts" />
+    <TypeScriptCompile Include="13_Type Inference.ts" />
+    <TypeScriptCompile Include="14_TypeCompatibility.ts" />
+    <TypeScriptCompile Include="15_AdvancedTypes.ts" />
+    <TypeScriptCompile Include="16_Symbols.ts" />
+    <TypeScriptCompile Include="17_IteratorsAndGenerators.ts" />
+    <TypeScriptCompile Include="18_Modules.ts" />
+    <TypeScriptCompile Include="19_ModuleResolution.ts" />
+    <TypeScriptCompile Include="20_Declaration Merging.ts" />
+    <TypeScriptCompile Include="21_Decorators.ts" />
+    <TypeScriptCompile Include="22_Mixins.ts" />
+    <TypeScriptCompile Include="22_Triple-SlashDirectives.ts" />
+    <TypeScriptCompile Include="AllValidators.ts" />
+    <TypeScriptCompile Include="Calculator.ts" />
+    <TypeScriptCompile Include="D3.d.ts" />
+    <TypeScriptCompile Include="declarations.d.ts" />
+    <TypeScriptCompile Include="LettersOnlyValidator.ts" />
+    <TypeScriptCompile Include="Log.ts" />
+    <TypeScriptCompile Include="math-lib.d.ts" />
+    <TypeScriptCompile Include="MyClass.ts" />
+    <TypeScriptCompile Include="myModules.d.ts" />
+    <TypeScriptCompile Include="node.d.ts" />
+    <TypeScriptCompile Include="OneTwoThree.ts" />
+    <TypeScriptCompile Include="ParseIntBasedZipCodeValidator.ts" />
+    <TypeScriptCompile Include="ProgrammerCalculator.ts" />
+    <TypeScriptCompile Include="SimpleModule.ts" />
+    <TypeScriptCompile Include="StaticZipCodeValidator.ts" />
+    <TypeScriptCompile Include="Test.ts" />
+    <TypeScriptCompile Include="TestCalculator.ts" />
+    <TypeScriptCompile Include="TestProgrammerCalculator.ts" />
+    <TypeScriptCompile Include="Validation.ts" />
+    <TypeScriptCompile Include="Validators.ts" />
+    <TypeScriptCompile Include="ZipCodeValidator.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

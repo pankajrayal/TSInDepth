@@ -35,19 +35,19 @@ unknown = 'A string';
 
 //----------------------------------------
 //Modules, Classes and Interfaces
-module Shapes{
-    export interface IPoint{
-        getDist():number;
+module Shapes {
+    export interface IPoint {
+        getDist(): number;
     }
 
-    export class Point implements IPoint{
-        constructor(public x: number, public y:number){
+    export class Point implements IPoint {
+        constructor(public x: number, public y: number) {
 
         }
-        getDist(){
-            return Math.sqrt(this.x * this.x + this.y*this.y);
+        getDist() {
+            return Math.sqrt(this.x * this.x + this.y * this.y);
         }
-        static origin = new Point(0,0);
+        static origin = new Point(0, 0);
     }
 }
 
@@ -55,34 +55,51 @@ var point = new Shapes.Point(50, 43);
 var dist = point.getDist();
 console.log(dist);
 
-module Animals{
-    export class Animal{
-        constructor(public animalName){ }
-        move(){
+module Animals {
+    export class Animal {
+        constructor(public animalName: string) { }
+        move() {
             return this.animalName + ' the animal moves.';
         }
     }
 
-    export class Snake extends Animal{
-        constructor(animalName){
+    export class Snake extends Animal {
+        constructor(animalName: string) {
             super(animalName);
         }
 
-        move(){
+        move() {
             return this.animalName + ' the snake slithers';
         }
     }
 
-    export class Cat extends Animal{
-        constructor(animalName){
+    export class Cat extends Animal {
+        constructor(animalName: string) {
             super(animalName);
         }
 
-        moveBy(){
+        moveBy() {
             return this.animalName + ' the cat cannot be bothered to move.';
         }
     }
 }
 
 var slippy = new Animals.Snake('Slippy');
-alert(slippy.move());
+console.log(slippy.move());
+console.log("------------------------");
+
+module Program.Utilities.Logging {
+    export class Console {
+        log(message: string): void {
+            if (typeof console !== 'undefined') {
+                console.log(message);
+            }
+        }
+    }
+}
+
+var logger = new Program.Utilities.Logging.Console();
+logger.log('Test Message');
+
+
+//----------------------------------------

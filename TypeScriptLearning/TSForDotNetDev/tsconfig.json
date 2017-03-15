@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+    }
+    // "files": [
+    //     "app.ts",
+    //     "sys.ts",
+    //     "types.ts",
+    //     "scanner.ts"
+    // ]
+    // "include": [
+    //     "src/**/*"
+    // ],
+    // "exclude": [
+    //     "node_modules",
+    //     "**/*.spec.ts"
+    // ]
+}
